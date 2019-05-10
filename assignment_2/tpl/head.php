@@ -29,8 +29,7 @@
                     <a class="nav-link" href="<?= $url ?>"><?= $title ?></a>
                  </li>
             <?php } ?>
-
-             <?php } ?>
+            <?php } ?>
          </ul>
     </nav>
 </header>

@@ -32,15 +32,14 @@ function input() {
         if(validateForm()) {
             $("#error").hide();
             $("#links").append("<li><a target='_blank'></a></li>");
-            $('ul li:last-child a').attr('href', $("input#url").val());
-            $('ul li:last-child a').text($("input#linkname").val());
+            $('#links li:last-child a').attr('href', $("input#url").val());
+            $('#links li:last-child a').text($("input#linkname").val());
         } else {
             $("#error").show();
             $("#error").text("Please fill in all fields");
         }
     })
 }
-
 
 $(function() {
     if (fileName.includes("links.php")) {
